@@ -5,12 +5,12 @@ function BodyPart(xpos,ypos,direction) {
 };
 
 function Snake(startX,startY) {
-	var moveStep = 8;
-	var bodyParts = [new BodyPart(startX,startY,'right')];
-	var reverseDirections = {'right':'left','left':'right','up':'down','down':'up'};
-	var gameRegion;
-	var onCrashCallback;
-	var self = this;
+	let moveStep = 8;
+	let bodyParts = [new BodyPart(startX,startY,'right')];
+	let reverseDirections = {'right':'left','left':'right','up':'down','down':'up'};
+	let gameRegion;
+	let onCrashCallback;
+	let self = this;
 	
 	this.eatFood = function() {
 		bodyParts.push(getNewTail());
