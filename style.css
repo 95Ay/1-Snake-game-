@@ -1,7 +1,7 @@
 body {
-	background-color: #E01B6A;
 	background-image: url(./background.png);
 	background-size: cover;
+	background-color: #E01B6A;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -11,7 +11,7 @@ body {
 
 #game {
 	width: 650px;
-
+	display: none;
 }
 
 #gameField {
@@ -75,3 +75,22 @@ body {
 	visibility:hidden;
 	color:#E01B6A;
 }
+
+
+body button {
+	font-size: 30px;
+	background-color: #8fafbb;
+	color: #fff;
+	padding: 20px 40px;
+	border: 0;
+	box-shadow: 0;
+	border-radius: 5px;
+	margin-bottom: 50px;
+
+  }
+
+  #start-button { 
+	align-items: center;
+	justify-content: center;
+	padding-top: 10%;
+  }

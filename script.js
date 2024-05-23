@@ -1,3 +1,6 @@
+window.onload = function () {
+
+
 let gameBoard;
 let snake;
 let moveDirection = 'right';
@@ -8,17 +11,14 @@ let roundNum = 1;
 let eatenItemsCount =0;
 let MAX_FOOD_ITEMS = 12;
 
-
-/*window.onload = function () {
 	const startButton = document.getElementById("start-button");
 	const restartButton = document.getElementById("restart-button");
+	const startScreen = document.getElementById("start-screen");
+	const gameScreen = document.getElementById("game");
 	startButton.addEventListener("click", function () {
-	  startGame();
+	 startScreen.style.display = "none" ;
+	 gameScreen.style.display = "block";
 	});
-	restartButton.addEventListener("click", () => {
-	  window.location.reload();
-	});
-}*/
 
 //actual field size(400px) divided by corresponding bodypart size(8px)
 let gameFieldRelativeWidth = 50;
@@ -149,3 +149,6 @@ function startNextRound() {
 	clearInterval(gameExecutor);
 	gameExecutor = setInterval(move,gameSpeed);
 };
+
+}
+
